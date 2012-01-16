@@ -4,11 +4,11 @@ A simple Vim plugin to help you traverse related Rails 3.1 files.
 
 ![screenshot](https://github.com/danchoi/rails31nav.vim/raw/master/screen.png)
 
-The approach here is a bit simpler than the way Tim Pope's
-[vim-rails][vim-rails] plugin traverses related files. Each approach has
-advantages and disadvantages.
+The approach here is a different from the way Tim Pope's [vim-rails][vim-rails]
+plugin traverses related files. But you should be able to use both plugins
+together without conflict.
 
-[vim-ruby]:https://github.com/vim-ruby/vim-ruby/tree/master/ftdetect
+[vim-rails]:https://github.com/vim-ruby/vim-ruby/tree/master/ftdetect
 
 ## Synopsis
 
