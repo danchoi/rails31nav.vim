@@ -2,6 +2,9 @@
 
 A simple Vim plugin to help you traverse related Rails 3.1 files.
 
+For example, if you were looking at `app/models/authentication.rb` and invoked
+the plugin, rails31nav.vim would show you a file selection dropdown like this:
+
 ![screenshot](https://github.com/danchoi/rails31nav.vim/raw/master/screen.png)
 
 The approach here is a different from the way Tim Pope's [vim-rails][vim-rails]
