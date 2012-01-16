@@ -6,9 +6,16 @@ A simple Vim plugin to help you traverse related Rails 3.1 files.
 
 ## Synopsis
 
-    <Leader><Leader> opens the related files drop down
 
-    <Leader><Leader> opens the related files drop down
+Open the list of related files:
+
+    <Leader><Leader> 
+
+Use `<C-n>` and `<C-p>` to move up and down the selection list. Press `ENTER`
+to go to that file.
+
+The selection list is also numbered. You can enter a menu number instead to
+open that file.
 
 
 ## Install
