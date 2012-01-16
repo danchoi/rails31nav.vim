@@ -31,7 +31,7 @@ open that file.
 
 There is a simple way to filter the list of related files. Type `a` to show
 only the files that are in the `app/` directory. Type `t` to show only the
-files in the `test` directory.
+files in the `test/` directory.
 
 
 ## Install
