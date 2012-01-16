@@ -18,7 +18,7 @@ together without conflict.
 
 To open the list of Rails files related to the file open in the current buffer:
 
-    <Leader><Leader>   # => probably , or \ depending on your setup
+    <Leader><Leader>   # => probably ,, or \\ depending on your setup
 
 Use `<C-n>` and `<C-p>` to move up and down the selection list. Press `ENTER`
 to go to that file.
