@@ -29,14 +29,14 @@ open that file.
 The plugin also adds a utility command that lets you open files 
 deep within a folder hierarchy a little faster:
 
-    :ScanOpen [filename]
+    :OP [filename]
 
 _filename_ is the name of a Rails file without the path. You can type the first
 few characters of the filename, and then use `TAB` to autocomplete it, and then
 (`TAB` || `<C-n>`) and (`shift+TAB` || `<C-p>`) to cycle through all the matches in the Rails directory
 tree. When you see the matching file, press `ENTER` to edit it.
 
-So for example, if you typed `:ScanOpen user` and then pressed `TAB`, you might
+So for example, if you typed `:OP user` and then pressed `TAB`, you might
 see `users.js.coffee` as the first match. Then if you pressed `TAB` again, you
 would see `users.css.scss`, and so on.
   

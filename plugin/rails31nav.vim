@@ -117,9 +117,10 @@ endfunc
 nnoremap <Leader><Leader> :call Rails31Nav_show_drop_down()<cr>
 
 
-" ScanOpen feature
+" open file feature
 
-command! -complete=custom,FasterOpenFunc -nargs=1 ScanOpen call s:faster_open(<f-args>)
+command -complete=custom,FasterOpenFunc -nargs=1 OPen call s:faster_open(<f-args>)
+
 
 func! FasterOpenFunc(A,L,P)
   return system("find app test -name '".a:A."*' | awk -F / '{print $NF}'")
