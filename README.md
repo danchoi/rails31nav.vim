@@ -31,12 +31,15 @@ faster:
 
     :ScanOpen [filename]
 
-_filename_ is the name of a Rails file without the path (e.g., `user.rb`). You
-can type the first few characters of the filename, and then use `TAB` to let
-autocomplete it, and `<C-n>` and `<C-p>` to cycle through all the matches in
-the Rails directory tree. When you see the matching file, press `ENTER` to edit
-it.
+_filename_ is the name of a Rails file without the path. You can type the first
+few characters of the filename, and then use `TAB` to let autocomplete it, and
+`TAB`|`<C-n>` and `<C-p>` to cycle through all the matches in the Rails directory
+tree. When you see the matching file, press `ENTER` to edit it.
 
+So for example, if you typed `:ScanOpen user` and then pressed `TAB`, you might
+see `users.js.coffee` as the first match. Then if you pressed `TAB` again, you
+would see `users.css.scss`, and so on.
+  
 ## Install
 
 Copy plugin/rails31nav.vim to ~/.vim/plugin/
