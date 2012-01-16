@@ -123,11 +123,11 @@ command -complete=custom,FasterOpenFunc -nargs=1 OPen call s:faster_open(<f-args
 
 
 func! FasterOpenFunc(A,L,P)
-  return system("find app test -name '".a:A."*' | awk -F / '{print $NF}'")
+  return system("find app test lib config db -name '".a:A."*' | awk -F / '{print $NF}'")
 endfun
 
 func! s:faster_open(filename_without_path)
-  let matches = system("find app test lib config -name '".a:filename_without_path."*'" )
+  let matches = system("find app test lib config db -name '".a:filename_without_path."*'" )
   let match = split(matches, "\n")[0]
   if match != ''
     exec "edit ".match
