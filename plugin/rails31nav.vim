@@ -6,7 +6,7 @@
 " See http://github.com/danchoi/rails31_nav.vim for README
 
 if exists("g:Rails31Nav") || &cp || version < 700
-  finish
+  " finish
 endif
 let g:Rails31Nav = 1
 
@@ -97,6 +97,42 @@ func! s:open_file()
   endif
 endfunc
 
+func! s:open_first_matching_file()
+  if (getline(1) =~ '^\s*$') " no selection
+    close
+    return
+  endif
+  let selection = s:trimString(getline(1))
+  if selection =~ '^\d' " choose by menu number
+    let selection = s:selection_list[selection - 1]
+  endif
+  close
+  if filereadable(selection)
+    exec 'edit '.selection
+  else
+    echo "File ".selection." not found"
+  endif
+endfunc
+
 nnoremap <Leader><Leader> :call Rails31Nav_show_drop_down()<cr>
+
+
+" ScanOpen feature
+
+command! -complete=custom,FasterOpenFunc -nargs=1 ScanOpen call s:faster_open(<f-args>)
+
+func! FasterOpenFunc(A,L,P)
+  return system("find app test -name '".a:A."*' | awk -F / '{print $NF}'")
+endfun
+
+func! s:faster_open(filename_without_path)
+  let matches = system("find app test lib config -name '".a:filename_without_path."*'" )
+  let match = split(matches, "\n")[0]
+  if match != ''
+    exec "edit ".match
+  endif
+endfunc
+
+
 
 

@@ -26,6 +26,14 @@ to go to that file.
 The selection list is also numbered. You can enter a menu number instead to
 open that file.
 
+The plugin also adds a utility command that lets you open files from the command prompt
+faster:
+
+    :ScanOpen [filename]
+
+_filename_ is the name of a Rails file without the path. You can type the first
+few characters of the filename, and then use `TAB` to let autocomplete show you
+all the matches in the Rails directory tree. 
 
 ## Install
 
@@ -41,6 +49,9 @@ If you want to use another key combo to open the related files dropdown, put
 something like this in your `.vimrc`:
 
     map <Leader>xx :call Rails31Nav_show_drop_down()<cr>
+
+
+
 
 ## Author
 
