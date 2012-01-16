@@ -26,8 +26,8 @@ to go to that file.
 The selection list is also numbered. You can enter a menu number instead to
 open that file.
 
-The plugin also adds a utility command that lets you open files from the command prompt
-faster:
+The plugin also adds a utility command that lets you open files 
+deep within a folder hierarchy a little faster:
 
     :ScanOpen [filename]
 
