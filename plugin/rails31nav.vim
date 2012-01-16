@@ -92,7 +92,6 @@ func! s:open_file()
   close
   if filereadable(selection)
     exec 'edit '.selection
-    normal gg
   else
     echo "File ".selection." not found"
   endif
