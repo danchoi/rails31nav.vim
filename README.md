@@ -32,7 +32,7 @@ faster:
     :ScanOpen [filename]
 
 _filename_ is the name of a Rails file without the path. You can type the first
-few characters of the filename, and then use `TAB` to let autocomplete show you
+few characters of the filename, and then use `TAB` to let autocomplete cycle through
 all the matches in the Rails directory tree. 
 
 ## Install
