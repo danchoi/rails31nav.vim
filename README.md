@@ -1,23 +1,19 @@
-# ruby_bashrockets.vim
+# rails31nav.vim
 
+A simple Vim plugin to help you traverse related Rails 3.1 files.
 
-This gives you Vim commands to convert Ruby hashes from the older hashrocket
-notation to the newer key-value notation, and back.
+![screenshot](https://github.com/danchoi/rails31nav.vim/raw/master/screen.png)
 
 ## Synopsis
 
-    :Bashrockets   {:foo => 'bar', :boston => 'rocks'}  ==>   {foo: 'bar', boston: 'rocks'}
-    :Hashrockets   {foo: 'bar', boston: 'rocks'}        ==>   {:foo => 'bar', :boston => 'rocks'}
+    <Leader><Leader> opens the related files drop down
 
-You can select a range before entering these commands. They will apply the 
-conversion to all the text in the range. Otherwise, the command is applied to the current line.
+    <Leader><Leader> opens the related files drop down
 
-You can also type the first few characters of either command and try to let 
-Vim tab-autocomplete it.
 
 ## Install
 
-Copy ftplugin/ruby_bashrockets.vim to ~/.vim/ftplugin/
+Copy plugin/rails31nav.vim to ~/.vim/plugin/
 
 Quick install:
 
