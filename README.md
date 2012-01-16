@@ -33,8 +33,9 @@ faster:
 
 _filename_ is the name of a Rails file without the path (e.g., `user.rb`). You
 can type the first few characters of the filename, and then use `TAB` to let
-autocomplete it and/or cycle through all the matches in the Rails directory
-tree. When you see the matching file, press `ENTER` to edit it.
+autocomplete it, and `<C-n>` and `<C-p>` to cycle through all the matches in
+the Rails directory tree. When you see the matching file, press `ENTER` to edit
+it.
 
 ## Install
 
