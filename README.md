@@ -17,7 +17,7 @@ Copy plugin/rails31nav.vim to ~/.vim/plugin/
 
 Quick install:
 
-    curl https://raw.github.com/danchoi/ruby_bashrockets.vim/master/ftplugin/ruby_bashrockets.vim > ~/.vim/ftplugin/ruby_bashrockets.vim
+    curl https://raw.github.com/danchoi/rails31nav.vim/master/plugin/rails31nav.vim > ~/.vim/plugin/rails31nav.vim
 
 ## Author
 
