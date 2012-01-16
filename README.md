@@ -31,9 +31,10 @@ faster:
 
     :ScanOpen [filename]
 
-_filename_ is the name of a Rails file without the path. You can type the first
-few characters of the filename, and then use `TAB` to let autocomplete cycle through
-all the matches in the Rails directory tree. 
+_filename_ is the name of a Rails file without the path (e.g., `user.rb`). You
+can type the first few characters of the filename, and then use `TAB` to let
+autocomplete it and/or cycle through all the matches in the Rails directory
+tree. When you see the matching file, press `ENTER` to edit it.
 
 ## Install
 
