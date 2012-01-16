@@ -10,7 +10,6 @@ if exists("g:Rails31Nav") || &cp || version < 700
 endif
 let g:Rails31Nav = 1
 
-
 let s:selection_list = []
 
 func! s:trimString(string)
