@@ -27,13 +27,6 @@ The selection list is also numbered. You can enter a menu number instead to
 open that file.
 
 
-## Filter
-
-There is a simple way to filter the list of related files. Type `a` to show
-only the files that are in the `app/` directory. Type `t` to show only the
-files in the `test/` directory.
-
-
 ## Install
 
 Copy plugin/rails31nav.vim to ~/.vim/plugin/
