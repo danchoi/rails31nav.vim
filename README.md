@@ -33,7 +33,7 @@ deep within a folder hierarchy a little faster:
 
 _filename_ is the name of a Rails file without the path. You can type the first
 few characters of the filename, and then use `TAB` to autocomplete it, and then
-(`TAB` || `<C-n>`) and `<C-p>` to cycle through all the matches in the Rails directory
+(`TAB` || `<C-n>`) and (`shift+TAB` || `<C-p>`) to cycle through all the matches in the Rails directory
 tree. When you see the matching file, press `ENTER` to edit it.
 
 So for example, if you typed `:ScanOpen user` and then pressed `TAB`, you might
