@@ -119,19 +119,16 @@ nnoremap <Leader><Leader> :call Rails31Nav_show_drop_down()<cr>
 
 " open file feature
 
-command -complete=custom,FasterOpenFunc -nargs=1 OPen call s:faster_open(<f-args>)
+command -complete=custom,FasterOpenFunc -nargs=1 OP call s:faster_open(<f-args>)
 
 
 func! FasterOpenFunc(A,L,P)
-  return system("find app test spec lib config db -name '".a:A."*' 2>/dev/null | awk -F / '{print $NF}'")
+  return system("find app test spec lib config db -name '".a:A."*' 2>/dev/null | awk -F / '{print $NF \" -> \" $0}'")
 endfun
 
-func! s:faster_open(filename_without_path)
-  let matches = system("find app test spec lib config db -name '".a:filename_without_path."*' 2>/dev/null " )
-  let match = split(matches, "\n")[0]
-  if match != ''
-    exec "edit ".match
-  endif
+func! s:faster_open(a)
+  let path = split(a:a, ' -> ')[1]
+  exec "edit ".path
 endfunc
 
 
