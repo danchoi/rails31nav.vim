@@ -63,7 +63,7 @@ function! Rails31Nav_show_related_completefunc(findstart, base)
 endfun
 
 func! Rails31Nav_related_files_list()
-  let command = "find app test spec -type f 2>/dev/null | grep '".s:match_basename."' | grep -v '\/\\.'"
+  let command = "find app test spec -type f  ! -iregex '.*/images/.*' 2>/dev/null | grep '".s:match_basename."' | grep -v '\/\\.'"
   let res = system(command)
   return split(res, "\n")
 endfunc
