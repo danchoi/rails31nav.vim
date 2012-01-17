@@ -63,7 +63,7 @@ function! Rails31Nav_show_related_completefunc(findstart, base)
 endfun
 
 func! Rails31Nav_related_files_list()
-  let command = "find app test -type f | grep '".s:match_basename."' | grep -v '\/\\.'"
+  let command = "find app test spec -type f 2>/dev/null | grep '".s:match_basename."' | grep -v '\/\\.'"
   let res = system(command)
   return split(res, "\n")
 endfunc
@@ -123,11 +123,11 @@ command -complete=custom,FasterOpenFunc -nargs=1 OPen call s:faster_open(<f-args
 
 
 func! FasterOpenFunc(A,L,P)
-  return system("find app test lib config db -name '".a:A."*' | awk -F / '{print $NF}'")
+  return system("find app test spec lib config db -name '".a:A."*' 2>/dev/null | awk -F / '{print $NF}'")
 endfun
 
 func! s:faster_open(filename_without_path)
-  let matches = system("find app test lib config db -name '".a:filename_without_path."*'" )
+  let matches = system("find app test spec lib config db -name '".a:filename_without_path."*' 2>/dev/null " )
   let match = split(matches, "\n")[0]
   if match != ''
     exec "edit ".match
