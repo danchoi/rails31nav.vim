@@ -7,7 +7,7 @@ the plugin, rails31nav.vim would show you a file selection dropdown like this:
 
 ![screenshot](https://github.com/danchoi/rails31nav.vim/raw/master/screen.png)
 
-The approach here is a different from the way Tim Pope's [vim-rails][vim-rails]
+The approach here is different from the way Tim Pope's [vim-rails][vim-rails]
 plugin traverses related files. But you should be able to use both plugins
 together without conflict.
 
